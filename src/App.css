@@ -1,38 +1,266 @@
-.App {
+.left-sec{
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: #f8f9fa;
+  z-index: 1;
+}
+.right-sec{
+  margin-left: 300px;
+  padding: 15px 0;
+}
+
+/* grid section */
+.card.grid-card{
+  border: 0;
+  box-shadow: 1px 5px 10px 0 #ebebeb;
+}
+.grid-card h1{
+  font-size: 25px;
+  height: 62px;
+  overflow: hidden;
+}
+.grid-card p{
+  font-size: 12px;
+    height: 35px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.grid-card span{
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #9e9e9e;
+}
+.grid-card button{
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #9e9e9e;
+}
+
+.grid-card .fedback-img{
+  border-radius: 7px
+}
+.grid-card button{
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 30px;
+  right: 4px;
+  top: 4px;
+}
+/* sidebar section */
+.sidebar-content{
+  padding: 15px;
+}
+.user-card{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  box-shadow: 1px 5px 10px 0 #ccc;
+  margin-bottom: 15px;
+}
+.user-img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user-txt-sec{
+  width: calc(100% - 70px);
+}
+.user-txt-sec h2{
+  font-size: 17px;
+  font-weight: 500;
+}
+.user-txt-sec p{
+  margin-bottom: 0;
+  color: #9e9e9e;
+  font-size: 14px;
+}
+.toggle-btn-card{
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  box-shadow: 1px 5px 10px 0 #ccc;
+  margin-bottom: 15px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.toggle-btn-card h1{
+  font-size: 23px;
+  font-weight: 500;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-group{
+  border-radius: 7px;
+    background-color: #dcdcdc;
+    overflow: hidden;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-group a{
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+}
+.btn-group a img{
+  width: 25px;
+}
+.btn-group a.active{
+  background-color: #95e9c5;
+}
+.create-feedback-card{
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  box-shadow: 1px 5px 10px 0 #ccc;
+  text-align: center;
+}
+.create-feedback-card h2{
+  font-size: 23px;
+    font-weight: 500;
+}
+.open-btn{
+  border-radius: 7px;
+  border: 0;
+  padding: 7px 30px;
+  background-color: #95e9c5;
+  text-decoration: none;
+  color: #000;
+}
+.close-btn{
+  border-radius: 7px;
+  border: 0;
+  padding: 7px 30px;
+  background-color: #eba3a6;
+  text-decoration: none;
+  color: #000;
+}
+/* sidebar form section */
+.sidebar-create-content{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f2f2f2ad;
+}
+.sidebar-card-body{
+  height: 100%;
+  background-color: #f2f2f2;
+  width: 80%;
+  border-radius: 0 35px 35px 0;
+  box-shadow: 1px 5px 10px 0 #ccc;
+}
+.sidebar-card-left{
+  width: 300px;
+  position: fixed;
+  height: 100%;
+  padding: 15px;
+}
+.sidebar-card-right{
+  margin-left: 300px;
+  padding: 15px;
+}
+.submit-btn{
+  border: 0;
+  background-color: #5cc8a1;
+  padding: 7px 35px;
+  border-radius: 7px;
+  font-weight: 600;
+  color: #ffffff;
+}
+/* list section */
+.card.list-card{
   display: flex;
-  flex-direction: column;
+  position: relative;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  border: 0;
+  box-shadow: 1px 5px 10px 0 #ccc;
+  margin-right: 60px;
 }
-
-.App-link {
-  color: #61dafb;
+.lc-img img{
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lc-txt{
+  width: calc(100% - 70px);
+}
+.lc-txt h1{
+  font-size: 17px;
+    font-weight: 600;
+    height: 21px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.lc-txt p{
+  font-size: 16px;
+  height: 24px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-bottom: 0;
+}
+.lc-txt span{
+  font-size: 14px;
+  color: #9e9e9e;
+}
+.list-card button{
+  position: absolute;
+  border: 0;
+  background-color: #ffffff;
+  box-shadow: 1px 5px 10px 0 #ccc;
+  border-radius: 50%;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -60px;
+}
+/* loader section */
+.loader{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* Pagination button section */
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination button{
+  border: 0;
+  border-radius: 7px;
+  padding: 3px 10px;
+}
+.pagination-list{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pagination-list li{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9e9e9e;
+  color: #ffffff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.pagination-list li.active{
+  background-color: #95e9c5;
+  color: #000;
 }
